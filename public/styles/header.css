@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+header{
+    padding-top: 10px;
+    background-color: lavender;
+    padding-bottom: 10px;
+}
+.options{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
