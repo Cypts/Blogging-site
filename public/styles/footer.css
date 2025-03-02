@@ -1,8 +1,15 @@
-
-footer{
-    margin: 0;;
-    display: block;
-    bottom: 0;
-    width: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0;
+  }
+  
+  footer {
+    height: 40px; /* Fixed height for the footer */
     background-color: lavender;
-}
+    text-align: center; /* Optional: Center the text inside the footer */
+    line-height: 20px; /* Vertically center the text in the footer */
+    width: 100%;
+  }
+  

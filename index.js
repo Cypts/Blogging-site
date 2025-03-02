@@ -1,10 +1,10 @@
 import express from "express"
+import bodyParser from "body-parser";
 
 const app= express();
 const port= 3000;
-
 app.use(express.static("public"));
-
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.get("/",(req,res)=>{
     res.render("home.ejs");
@@ -12,6 +12,16 @@ app.get("/",(req,res)=>{
 app.get("/new_blog",(req,res)=>{
     res.render("new_blog.ejs");
 })
+app.post("/new_blog", (req, res) => {
+    const { title, blog, author } = req.body;
+    const newBlog = {
+        title: title,
+        name: author,
+        writes: blog
+    };
+    blogs.push(newBlog);
+    res.render("new_blog.ejs");
+});
 app.get("/view_others",(req,res)=>{
     res.render("view_others.ejs",{blogs});
 })

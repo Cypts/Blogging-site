@@ -1,0 +1,21 @@
+.ip{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+input{
+    height: 18px;
+    width: 60%;
+    margin: 10px;
+}
+.blog{
+    height: 300px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
