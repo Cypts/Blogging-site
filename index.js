@@ -12,7 +12,7 @@ app.get("/",(req,res)=>{
 app.get("/new_blog",(req,res)=>{
     res.render("new_blog.ejs");
 })
-app.get("/view_other",(req,res)=>{
+app.get("/view_others",(req,res)=>{
     res.render("view_others.ejs");
 })
 app.listen(port,()=>{
